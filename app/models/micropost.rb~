@@ -1,0 +1,4 @@
+class Micropost < ActiveRecord::Base
+	validates :content, length: { maximum: 10}
+	validates :user_id, length: { maximum: 1}
+end
